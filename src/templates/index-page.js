@@ -514,10 +514,18 @@ export const IndexPageTemplate = ({
                   </p>
                   <p>
                     <a
-                      href="mailto:hal@hal9000.com"
+                      href="mailto:hal9000s@mac.com"
                       className="btn btn-primary btn-learn"
                     >
                       Email me
+                    </a>
+                  </p>
+<p>
+                    <a
+                      href="tel:813-758-6119"
+                      className="btn btn-primary btn-learn"
+                    >
+                      Call / text me
                     </a>
                   </p>
                 </div>
