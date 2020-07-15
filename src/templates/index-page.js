@@ -20,7 +20,6 @@ const choose = `
 <li>Company Started in 2000 - Apple Certified Tech</li>
 <li>Largest Service Area in Tampa Bay: Hillsborough & Pinellas counties (other areas available)</li>
 <li>No Sales (Means no profit motiviated preferences)</li>
-<li>Service Contracts available</li>
 `;
 
 const skills = `
