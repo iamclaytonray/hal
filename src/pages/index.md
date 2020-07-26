@@ -3,28 +3,23 @@ templateKey: index-page
 title: Great coffee with a conscience
 image: /img/hal-bg.jpeg
 whyChooseMe: >-
-  - 1
+  * All Macs and Servers Supported
 
-  - 2
+  * Competitive Rates, Fast Response, & Flexible Hours
 
+  * On-site Service
 
-  <li>All Macs and Servers Supported</li>
+  * All Versions of the Macintosh OS Supported
 
-  <li>Competitive Rates, Fast Response, & Flexible Hours</li>
+  * Any kind of User; from Individual to Corporate
 
-  <li>On-site Service</li>
+  * In-house Repairs & Upgrades
 
-  <li>All Versions of the Macintosh OS Supported</li>
+  * Company Started in 2000 - Apple Certified Tech
 
-  <li>Any kind of User; from Individual to Corporate</li>
+  * Largest Service Area in Tampa Bay: Hillsborough & Pinellas counties (other areas available)
 
-  <li>In-house Repairs & Upgrades</li>
-
-  <li>Company Started in 2000 - Apple Certified Tech</li>
-
-  <li>Largest Service Area in Tampa Bay: Hillsborough & Pinellas counties (other areas available)</li>
-
-  <li>No Sales (Means no profit motiviated preferences)</li>
+  * No Sales (Means no profit motiviated preferences)
 whatIDo: |-
   <li>Troubleshooting</li>
   <li>Repairs</li>
