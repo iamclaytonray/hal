@@ -33,7 +33,7 @@ const skills = `
 `;
 
 export const IndexPageTemplate = ({
-  image,
+  featuredImage,
   whatIDo,
   whyChooseMe,
   getInTouch,
@@ -51,7 +51,13 @@ export const IndexPageTemplate = ({
         <div id="colorlib-main">
           <aside id="colorlib-hero" style={{ height: '273px' }}>
             <div className="flexslider" style={{ height: '273px' }}>
-              <img src="https://images.unsplash.com/photo-1527443195645-1133f7f28990?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" />
+              <img
+                src={
+                  featuredImage.childImageSharp
+                    ? featuredImage.childImageSharp.fluid.src
+                    : featuredImage
+                }
+              />
             </div>
           </aside>
           <div id="about" className="colorlib-about">
@@ -152,7 +158,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        // image={frontmatter.image}
+        featuredImage={frontmatter.featuredImage}
         whatIDo={frontmatter.whatIDo}
         whyChooseMe={frontmatter.whyChooseMe}
         getInTouch={frontmatter.getInTouch}
@@ -167,9 +173,13 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        # image {
-
-        # }
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         whatIDo
         whyChooseMe
         getInTouch

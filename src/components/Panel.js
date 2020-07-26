@@ -1,4 +1,5 @@
 import React from 'react';
+import { HTMLContent } from './Content';
 
 export const Panel = ({ isOpen, toggle, text, heading }) => {
   const subContainerClassName = isOpen
@@ -22,7 +23,8 @@ export const Panel = ({ isOpen, toggle, text, heading }) => {
       <div className={subContainerClassName} role="tabpanel">
         {isOpen && (
           <div className="panel-body">
-            <p>{text}</p>
+            {/* <p>{text}</p> */}
+            <HTMLContent content={text} />
           </div>
         )}
       </div>

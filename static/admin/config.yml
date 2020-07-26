@@ -25,7 +25,7 @@ collections:
               widget: 'hidden',
               default: 'index-page',
             }
-          - { label: Image, name: image, widget: image }
-          - { label: Why Choose Me, name: whyChooseMe, widget: text }
-          - { label: What I Do, name: whatIDo, widget: text }
-          - { label: Get In Touch, name: getInTouch, widget: text }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Why Choose Me, name: whyChooseMe, widget: markdown }
+          - { label: What I Do, name: whatIDo, widget: markdown }
+          - { label: Get In Touch, name: getInTouch, widget: markdown }

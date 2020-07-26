@@ -1,7 +1,6 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/hal-bg.jpeg
+featuredImage: /img/hal-bg.jpeg
 whyChooseMe: >-
   * All Macs and Servers Supported
 
