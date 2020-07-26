@@ -17,7 +17,6 @@ const choose = `
 <li>Company Started in 2000 - Apple Certified Tech</li>
 <li>Largest Service Area in Tampa Bay: Hillsborough & Pinellas counties (other areas available)</li>
 <li>No Sales (Means no profit motiviated preferences)</li>
-<li>Service Contracts available</li>
 `;
 
 const skills = `
@@ -507,10 +506,18 @@ export const IndexPageTemplate = ({
                   <p className="colorlib-lead">{getInTouch}</p>
                   <p>
                     <a
-                      href="mailto:hal@hal9000.com"
+                      href="mailto:hal9000s@mac.com"
                       className="btn btn-primary btn-learn"
                     >
                       Email me
+                    </a>
+                  </p>
+<p>
+                    <a
+                      href="tel:813-758-6119"
+                      className="btn btn-primary btn-learn"
+                    >
+                      Call / text me
                     </a>
                   </p>
                 </div>

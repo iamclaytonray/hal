@@ -27,6 +27,12 @@ export const Sidebar = () => {
             <li>
               <a href="#contact">Contact</a>
             </li>
+     <li>
+              <a href="tel:813-758-6119">813-758-6119</a>
+            </li>
+      <li>
+              <a href="mailto:hal9000s@mac.com">hal9000s@mac.com</a>
+            </li>
           </ul>
         </nav>
         <div
