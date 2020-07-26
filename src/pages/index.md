@@ -2,23 +2,15 @@
 templateKey: index-page
 featuredImage: /img/hal-bg.jpeg
 whyChooseMe: >-
-  * All Macs and Servers Supported
-
-  * Competitive Rates, Fast Response, & Flexible Hours
-
-  * On-site Service
-
-  * All Versions of the Macintosh OS Supported
-
-  * Any kind of User; from Individual to Corporate
-
-  * In-house Repairs & Upgrades
-
-  * Company Started in 2000 - Apple Certified Tech
-
-  * Largest Service Area in Tampa Bay: Hillsborough & Pinellas counties (other areas available)
-
-  * No Sales (Means no profit motiviated preferences)
+  <li>All Macs and Servers Supported</li>
+  <li>Competitive Rates, Fast Response, & Flexible Hours</li>
+  <li>On-site Service</li>
+  <li>All Versions of the Macintosh OS Supported</li>
+  <li>Any kind of User; from Individual to Corporate</li>
+  <li>In-house Repairs & Upgrades</li>
+  <li>Company Started in 2000 - Apple Certified Tech</li>
+  <li>Largest Service Area in Tampa Bay: Hillsborough & Pinellas counties (other areas available)</li>
+  <li>No Sales (Means no profit motiviated preferences)</li>
 whatIDo: |-
   <li>Troubleshooting</li>
   <li>Repairs</li>
