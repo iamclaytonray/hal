@@ -4,9 +4,6 @@ import { Link, graphql } from 'gatsby';
 import ReactHtmlParser from 'react-html-parser';
 
 import Layout from '../components/Layout';
-import Features from '../components/Features';
-import BlogRoll from '../components/BlogRoll';
-import { WorkItem } from '../components/WorkItem';
 import { Panel } from '../components/Panel';
 import { Sidebar } from '../components/Sidebar';
 
@@ -38,12 +35,9 @@ const skills = `
 
 export const IndexPageTemplate = ({
   image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
+  whatIDo,
+  whyChooseMe,
+  getInTouch,
 }) => {
   const [openPanel, setOpenPanel] = React.useState(0);
 
@@ -222,13 +216,15 @@ export const IndexPageTemplate = ({
                         isOpen={openPanel === 0}
                         toggle={() => toggle(0)}
                         heading="Why Choose Me"
-                        text={ReactHtmlParser(choose)}
+                        // text={ReactHtmlParser(choose)}
+                        text={whyChooseMe}
                       />
                       <Panel
                         isOpen={openPanel === 1}
                         toggle={() => toggle(1)}
                         heading="What I Do"
-                        text={ReactHtmlParser(skills)}
+                        text={whatIDo}
+                        // text={ReactHtmlParser(skills)}
                       />
                     </div>
                   </div>
@@ -508,10 +504,7 @@ export const IndexPageTemplate = ({
                   className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
                   data-animate-effect="fadeInLeft"
                 >
-                  <p className="colorlib-lead">
-                    Whatever the scope of your project is, please give me an
-                    email!
-                  </p>
+                  <p className="colorlib-lead">{getInTouch}</p>
                   <p>
                     <a
                       href="mailto:hal@hal9000.com"
@@ -535,7 +528,12 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <IndexPageTemplate title={frontmatter.title} />
+      <IndexPageTemplate
+        // image={frontmatter.image}
+        whatIDo={frontmatter.whatIDo}
+        whyChooseMe={frontmatter.whyChooseMe}
+        getInTouch={frontmatter.getInTouch}
+      />
     </Layout>
   );
 };
@@ -546,7 +544,12 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
+        # image {
+
+        # }
+        whatIDo
+        whyChooseMe
+        getInTouch
       }
     }
   }
