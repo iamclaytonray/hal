@@ -36,5 +36,5 @@ whatIDo: |-
   <li>Security - Data Management</li>
   <li>Networks</li>
   <li>Facilitation of Warranty Issues & Purchases</li>
-getInTouch: plz
+getInTouch: Whatever the scope of your project is, please give me an email, text, or call!
 ---
